@@ -1,0 +1,402 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Navbar Style */
+.ferrari-navbar {
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 10px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+    padding: 10px 20px;
+}
+
+.nav-links li a:hover {
+    color: #ff2800;
+}
+
+.img-1 {
+    height: 45px;
+    filter: brightness(0) invert(1);
+    margin-right: 40px;
+}
+
+/* Hero Video Section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Banner Content Section */
+.ferrari-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.banner-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 50px;
+}
+
+.content-side {
+    flex: 1;
+}
+
+.headline {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.arrow {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.read-more:hover .arrow {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.image-side {
+    flex: 1;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Slider Controls */
+.slider-controls {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: transparent;
+    border: 2px solid #ff2800;
+    width: 12px;
+    height: 12px;
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.view-all hr {
+    width: 60px;
+    border: 0;
+    border-top: 1px solid #000;
+}
+
+.view-all a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Grid Banner Images */
+.banner-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-1,
+.banner-2 {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2.5s ease;
+}
+
+.banner-1:hover img,
+.banner-2:hover img {
+    transform: scale(1.1); /* 2.05 অনেক বেশি ছিল, তাই স্ট্যান্ডার্ড জুম দেওয়া হয়েছে */
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.banner-text h2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.banner-text i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Footer Subscription Section */
+.footer-1 {
+    padding: 80px 20px; /* প্যাডিং ঠিক করা হয়েছে যাতে ওভারফ্লো না হয় */
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    color: white;
+    background-color: red;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    transform: scale(1.1);
+    background-color: cadetblue;
+}
+
+/* Footer Option Section */
+footer {
+    background-color: #000;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+}
+
+.option h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.option ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.option ul li {
+    color: #ccc;
+    padding-bottom: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.option ul li:hover {
+    color: coral;
+}
+
+/* Social Link */
+.social-link {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 10%;
+    flex-wrap: wrap;
+}
+
+.social-link div {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link li {
+    list-style-type: none;
+}
+
+.social-link li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.social-link li a:hover {
+    color: brown;
+}
+
+.icon {
+    padding-left: 4px;
+}
+
+.gap {
+    margin-right: 6px;
+}
+
+hr {
+    opacity: 0.2;
+    margin: 0 10%;
+}
+
+/* Text Description */
+.text-description {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.text-description p {
+    color: white;
+    font-size: 14px;
+    opacity: 0.5;
+    line-height: 1.6;
+}
+
+/* Last Footer Section */
+.last-footer {
+    width: 100%;
+    background-color: #333;
+    padding: 40px 0;
+}
+
+.contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contain div {
+    color: #bbb;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.contain div:hover {
+    color: white;
+}
