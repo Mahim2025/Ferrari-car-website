@@ -72,6 +72,53 @@
     object-fit: cover;
 }
 
+
+/* share style  */
+
+
+.banner-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.banner-text h2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.banner-text i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+span{
+  border: 2px solid;
+  padding: 8px;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+
+}
+span:hover{
+    transform: rotate(360);
+    color: red;
+}
+span{
+    transition: 2s ease-in anim;
+}
+
 /* Banner Content Section */
 .ferrari-banner {
     display: flex;
@@ -221,36 +268,9 @@
 
 .banner-1:hover img,
 .banner-2:hover img {
-    transform: scale(1.1); /* 2.05 অনেক বেশি ছিল, তাই স্ট্যান্ডার্ড জুম দেওয়া হয়েছে */
+    transform: scale(1.1); 
 }
 
-.banner-text {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    width: 90%;
-    z-index: 2;
-}
-
-.banner-text h1 {
-    font-size: 28px;
-    margin: 10px 0;
-    text-transform: uppercase;
-}
-
-.banner-text h2 {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.banner-text i {
-    font-size: 12px;
-    margin-left: 5px;
-}
 
 /* Footer Subscription Section */
 .footer-1 {
