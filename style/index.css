@@ -274,7 +274,7 @@ span{
 
 /* Footer Subscription Section */
 .footer-1 {
-    padding: 80px 20px; /* প্যাডিং ঠিক করা হয়েছে যাতে ওভারফ্লো না হয় */
+    padding: 80px 20px; 
     background-color: rgba(0, 0, 0, 0.85);
     width: 100%;
     text-align: center;
@@ -348,13 +348,14 @@ footer {
     flex-wrap: wrap;
 }
 
-.social-link div {
+.social-link .sub-section {
     display: flex;
-    gap: 20px;
+    gap: 290px;
 }
 
 .social-link li {
     list-style-type: none;
+    margin-bottom: 30px;
 }
 
 .social-link li a {
