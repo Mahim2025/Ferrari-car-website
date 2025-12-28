@@ -103,22 +103,102 @@ nav ul a {
   border-radius: 100%;
 }
 
+.hover:hover{
+      color: #ff2800;
+}
+
 /* dna section */
+.dna-title{
+  color: #ff2800;
+  padding: 40px;
+}
+
+.dna-secont-title{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3.5em;
+  font-weight: 800;
+}
 
 .dna {
   margin: 50px 0;
   padding: 20px 50px;
+  height: 100%;
 }
 
 .dna div p {
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   max-width: 45%;
   margin: 0 auto;
 }
+/* CARD STYLE */
+
+.card-container{
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 120px;
+  margin-right: 100px;
+  gap: 45px;
+  /* justify-content: space-evenly; */
+}
+.card-1{
+    padding: 10px;
+  border-radius: 4px;
+  width:450px;
+  height: 600px;
+
+
+}
+.card-img{
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+
+}
+.card-title{
+  margin-top: 10px;
+  font-size: 28px;
+
+}
+.card-description{
+  padding-top: 19px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+
+/* about-banner style */
+.banner-flex{
+  margin: 0;
+  display: flex;
+  height: 100%;
+}
+.about-banner-1{
+  width: 100%;
+  height: 100vh;
+}
+
+.about-banner-2{
+  width: 100%;
+  height: 700px;
+
+}
+.about-banner-3{
+  width: 100%;
+  height: 700px;
+
+
+}
+  
+  /* border: 2px solid  rebeccapurple; */
+
 
 /* footer */
 footer section {
+  margin-top: 0px;
   background-color: black;
   padding: 30px 50px;
   color: white;
